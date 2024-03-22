@@ -3,9 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Digital Medical Certificate</title>
+
 </head>
 <body>
-    Hi there
+    <div id="container">
+        <div class="bar print-hidden"> 
+            <div class="content-center">
+                <button id="btn-resp" class="hidden"><span id="btn-resp-d">mobile version</span><span id="btn-resp-m">desktop version</span></button>
+            </div>
+            
+        </div> 
+        <div id="printable">
+            <!-- <div class="banner">
+                We are aware of an issue where a fraction of MCs created between 4-15 Nov are 8h ahead of time. If you require your MC to be amended, please <a href="https://go.gov.sg/amend-mc-date-time">put up a request</a>
+            </div> -->
+            <div class="mc-page">
+                <div class="ie-row">
+                    <div class="mc-page-cell cellsize1-of-1 borderless half-padding content-center">
+                        <img id="img-logo" src="/assets/logos/minimed.png">
+                    </div>
+                </div>
+                <div class="ie-row">
+                    <div class="mc-page-cell cellsize-1of1 borderless third-padding content-center">
+                        <h1>Medical Certificate </h1>
+                    </div>
+                </div> 
+                <div class="ie-row">
+                    <div class="mc-page-cell cellsize-1of1 borderless third-padding">
+                        <span class="left"><h2>Reg No.: 201432854H</h2></span>
+                        <span class="right"><h2>MC-814QXY4</h2></span>
+                    </div>
+                </div>
+                <div class="ie-row">
+                    <div class="mc-page-cell cellsize-1of2 top-row first-col">
+                        <div class="cell-header">Name</div>
+                        <div class="cell-content">ISABELLE LAU XIN QI</div>
+                    </div>
+                    <div class="mc-page-cell cellsize-1of2 top-row">
+                        <div class="cell-header">NRIC / FIN / Passport</div>
+                        <div class="cell-content">T0377783E</div>
+                    </div>
+                </div>
+                <div class="ie-row">
+                    <div class="mc-page-cell cellsize-1of1 first-col">
+                        <div class="cell-header"></div>
+                        <div class="cell-content">
+                            <div class="text-section">
+                                This is to certify that the above-named is unfit for duty for a period of
+                                <span class="underline">2 days</span> from
+                                <span class="underline">29-May-2023</span> to
+                                <span class="underline">30-May-2023</span>.
+                            </div>
+                            <div class="text-section">
+                                <div class="text-section-header"> TYPE OF MEDICAL CERTIFICATE: </div>
+                                <div class="leave-option">
+                                    <span class="square">
+                                        <i class="fa"></i>
+                                    </span>
+                                    <label class="option">Hospitalisation Leave</label>
+                                    
+                                    <span class="detail">
+                                        <label>Admitted on:</label>
+                                        <span class="underline"></span>
+                                    </span>
+                                    <span class="detail">
+                                        <label>Discharged on:</label>
+                                        <span class="underline"></span>
+                                    </span>
+                                    
+                                    
+                                </div>
+                                <div class="leave-option">
+                                    <span class="square">
+                                        <i class="fa"></i>
+                                    </span>
+                                    <label class="option">Outpatient Sick Leave</label>
+                                </div>
+                                <div class="leave-option">
+                                    <span class="square">
+                                        <i class="fa"></i>
+                                    </span>
+                                    <label class="option">Maternity Leave</label>
+                                    <span class="detail">
+                                        <label>Delivered on:</label>
+                                        <span class="underline"></span>
+                                    </span>
+                                </div>
+                                <div class="leave-option">
+                                    <span class="square">
+                                        <i class="fa"></i>
+                                    </span>
+                                    <label class="option">Sterilisation Leave</label>
+                                    <span class="detail">
+                                        <label>Operated on:</label>
+                                        <span class="underline"></span>
+                                    </span>
+                                </div>
+                                <div class="leave-option">
+                                    <span class="square">
+                                        <i class="fa"></i>
+                                    </span>
+                                    <label class="option">Time Chit</label>
+                                    
+                                    <span class="detail">
+                                        <label>Time In:</label>
+                                        <span class="underline"></span>
+                                    </span>
+                                    <span class="detail">
+                                        <label>Time Out:</label>
+                                        <span class="underline"></span>
+                                    </span>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="text-section">
+                                        This certificate is not valid for absence from court attendance.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ie-row">
+                    <div class="mc-page-cell cellsize-1of1 first-col">
+                        <div class="cell-header"></div>
+                        <div class="cell-content">
+                            <div class="text-section">
+                                Fit for light duty from
+                                <span class="underline">N.A.</span> to
+                                <span class="underline">N.A.</span>.
+                            </div>
+                            <div class="text-section">
+                                <div class="text-section-header"> COMMENTS: </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ie-row">
+                    <div class="mc-page-cell cellsize-1of3 first-col">
+                        <div class="cell-header">Hospital/Clinic</div>
+                        <div class="cell-content">
+                            <div class="text-section"></div>
+                            <div class="text-section">Minmed Clinic (Sengkang)</div>
+                        </div>
+                    </div>
+                    <div class="mc-page-cell cellsize-1of3 split-row">
+                        <div class="mc-page-cell cellsize-1of1">
+                            <div class="cell-header">Ward</div>
+                            <div class="cell-content">NA</div>
+                        </div>
+                        <div class="mc-page-cell cellsize-1of1">
+                            <div class="cell-header">Date</div>
+                            <div class="cell-content">28-May-2023</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mc-page-cell cellsize-1of3">
+                        <div class="cell-header">Name/Designation/MCR No</div>
+                        <div class="cell-content">
+                            <div class="text-section uppercase">LOCUM DOCTOR 2</div>
+                            <div class="text-section"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ie-row">
+                    <div class="mc-page-cell cellsize1-of-1 borderless half-padding content-center">
+                        This medical certificate is electronically generated. No signature is required.
+                    </div>
+                </div>
+                <div class="ie-row">
+                    <div class="mc-page-cell cellsize1-of-1 borderless half-padding content-center">
+                       This medical certificate was retrieved from <span id="current-page"><a href="https://mc.gov.sg/mc/0mwu0guivvg16mxsqbxey0zs8h">https://mc.gov.sg/mc/0mwu0guivvg16mxsqbxey0zs8h</a></span>
+                       <i id="copy-href" class="far fa-clone"></i>
+                    </div>
+                </div>
+                <div class="ie-row">
+                    <div id="qr-code-wrapper">
+                        <canvas id="qr-code" height="164" width="164" style="height: 164px; width: 164px;"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="print-hidden content-center half-padding mc-footer">Find out more about the Digital MC initiative at <a href="/">mc.gov.sg</a></div>
+        </div>
+        <div id="copy-href-snackbar">Link to MC copied</div>
+        <div id="download-pdf"></div>
+    </div>
 </body>
 </html>
